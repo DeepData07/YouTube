@@ -4,6 +4,7 @@
 <!-- 2 - inline block - takes space as they need - like input, image -->
 <!-- 3 - inline element - like strong in text - takes up only some part in text -->
 
+<!-- div- used as containers -  can have diff elemnts or div as well -->
 
 <!DOCTYPE html>
 <html>
@@ -12,8 +13,9 @@
         <style>
 
             .search-bar{
-                font-size: 10px;
+                font-size: 5px;
                 margin-left: 0px;
+                display: block;
             }
             .thumbnail{
                 width: 100px;
@@ -30,33 +32,64 @@
 
             
 
-            .video-tile{
+            .video-title{
                 font-size: 10px;
 
             }
 
             .video-author{
                 display: block;
+                font-size: 10px;
 
             }
 
             .video-stats{
                 display: block;
+                font-size: 10px;
                 
+            }
+
+            .video-preview{
+                width: 100px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 03px;
             }
         </style>
        </head>
        <body>
         <input class = "search-bar" type="text" placeholder="Search">
-        <img class = "thumbnail" src="thumbnail/1.jpg">
-        <p  class="video-title">
-            Hip-Hop Remix Songs!!!!!!!!!!
-        </p>
-        <p class="video-author">
-            T-Seriessssss
-        </p>
-        <p class="video-stats">
-            3.4M Views &#183; 6 months ago
-        </p>
+        
+        <div class="video-preview">
+            <img class = "thumbnail" src="thumbnail/1.jpg">
+        
+            <p  class="video-title">
+                Hip-Hop Remix Songs!!!!!!!!!!!!!!!!!!!!!
+            </p>
+            
+            <p class="video-author">
+                T-Seriessssss
+            </p>
+            
+            <p class="video-stats">
+                3.4M Views &#183; 6 months ago
+            </p>            
+        </div>
+
+        <div class="video-preview">
+            <img class = "thumbnail" src="thumbnail/2.jpg">
+        
+            <p  class="video-title">
+                Lofi Songs
+            </p>
+            
+            <p class="video-author">
+                T-Seriessssss!!!!!!!!!!!
+            </p>
+            
+            <p class="video-stats">
+                3.4M Views &#183; 6 months ago
+            </p>            
+        </div>
        </body>         
 </html>
