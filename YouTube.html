@@ -1,11 +1,23 @@
+<!-- NITTY -GRITTY -->
+<!-- Display properties -->
+<!-- 1 - Block element - like paragraph - takes whole line -->
+<!-- 2 - inline block - takes space as they need - like input, image -->
+<!-- 3 - inline element - like strong in text - takes up only some part in text -->
+
+
 <!DOCTYPE html>
 <html>
        <head>
         <title>Youtube.com - Clone</title>
         <style>
+
+            .search-bar{
+                font-size: 10px;
+                margin-left: 0px;
+            }
             .thumbnail{
                 width: 100px;
-                
+
                 /* PRACTISE----- */
                 /* object-fit: cover; dimensions change krne pe image na bigde jisse */
                 /* object-fit: contain;
@@ -13,10 +25,38 @@
                 /* border-width: 2px;
                 border-style: solid;
                 border-color: rebeccapurple; */ 
+                display: block;
+            }
+
+            
+
+            .video-tile{
+                font-size: 10px;
+
+            }
+
+            .video-author{
+                display: block;
+
+            }
+
+            .video-stats{
+                display: block;
+                
             }
         </style>
        </head>
        <body>
+        <input class = "search-bar" type="text" placeholder="Search">
         <img class = "thumbnail" src="thumbnail/1.jpg">
+        <p  class="video-title">
+            Hip-Hop Remix Songs!!!!!!!!!!
+        </p>
+        <p class="video-author">
+            T-Seriessssss
+        </p>
+        <p class="video-stats">
+            3.4M Views &#183; 6 months ago
+        </p>
        </body>         
 </html>
