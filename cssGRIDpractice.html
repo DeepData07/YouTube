@@ -1,0 +1,42 @@
+<!-- grid is like a matrix -->
+
+<!DOCTYPE html>
+<html>
+    <head>GRID PRACTISE-----</head>
+    <body>
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px;">
+            <div style="background-color: aqua;">div1</div>
+           <div style="background-color: blueviolet;">div2 <p>allignment</p></div> <!--  grd maintains allighnment ye vala grid chauda hua to autometic side vala bhi hogya -->
+        </div>
+
+        <div style="
+        margin-top: 15px;
+            display: grid;
+            grid-template-columns: 100px 100px 150px;">
+            <div style="background-color: aqua;">10px</div>
+            <div style="background-color: blueviolet;">10px <p>allignment</p></div> <!--  grd maintains allighnment ye vala grid chauda hua to autometic side vala bhi hogya -->
+            <div style="background-color: aqua;">15px</div>
+            <div style="background-color: green;">10px</div> 
+        </div>
+
+        <div style="
+        margin-top: 15px;
+            display: grid;
+            grid-template-columns: 100px 1fr;"> <!-- 1fr means bachi hui sari jagah lelo i.e on resizing the page it will autometically adjust-->
+            <div style="background-color: aqua;">10px</div>
+            <div style="background-color: blueviolet;">1fr </div> <!--  grd maintains allighnment ye vala grid chauda hua to autometic side vala bhi hogya -->
+           
+        </div>
+
+        <div style="
+        margin-top: 15px;
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;"> <!-- 2fr is double of 1fr i.e out of three portion one is 1third and second is 2third     -->
+            <div style="background-color: aqua;">10px</div>
+            <div style="background-color: blueviolet;">1fr </div> <!--  grd maintains allighnment ye vala grid chauda hua to autometic side vala bhi hogya -->
+            <div style="background-color: aqua;">2px</div>
+        </div>
+    </body>
+</html>

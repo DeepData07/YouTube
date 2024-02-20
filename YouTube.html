@@ -5,13 +5,30 @@
 <!-- 3 - inline element - like strong in text - takes up only some part in text -->
 
 <!-- div- used as containers -  can have diff elemnts or div as well -->
+<!-- LAYOUTS - Horizontal or vertical - these are achieved by nested layout technique -->
 
+<!-- For vertical layout -->
+<!-- <div> -->
+    <!-- <div></div> -->
+    <!-- <div></div> -->
+<!-- </div> -->
+
+<!-- <p> -->
+    <!-- font-family: Roboto, Arial -> font stack -- if roboto not found then goto arial -->
+<!-- </p> -->
+
+<!-- For layouts specially in Horizontal layout jo side side hote hai -->
+<!-- unme allighnmnet ki bahaut problem ati hai iska sol is CSS grid -->
 <!DOCTYPE html>
 <html>
        <head>
         <title>Youtube.com - Clone</title>
         <style>
 
+            p{
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
             .search-bar{
                 font-size: 5px;
                 margin-left: 0px;
@@ -30,23 +47,18 @@
                 display: block;
             }
 
-            
-
             .video-title{
-                font-size: 10px;
-
+                margin-top: 0px;
+                margin-bottom: 5px;
             }
 
-            .video-author{
-                display: block;
-                font-size: 10px;
 
-            }
 
+            .video-author,
             .video-stats{
-                display: block;
-                font-size: 10px;
-                
+                font-size: 4px;
+                color: rgb(74, 71, 71);
+                margin-bottom: 1px;
             }
 
             .video-preview{
@@ -55,41 +67,94 @@
                 vertical-align: top;
                 margin-right: 03px;
             }
+
+            .video-grid{
+                background-color: grey;
+                display: grid;
+                grid-template-columns: 10px 1fr;
+            }
+
+            .author-pic{
+                
+                
+                vertical-align: top;
+                margin-top: 0px;
+            }
+
+            .video-info{
+                font-size: 5px;
+            
+                font-weight: 550;
+            }
+
+            .author-pic-css{
+                width: 100%;
+                margin-top: 0px;
+                border-radius: 50px;
+            }
+
+            .thumbnail-row{
+                margin-bottom: 10px;
+            }
+
         </style>
        </head>
        <body>
         <input class = "search-bar" type="text" placeholder="Search">
         
         <div class="video-preview">
-            <img class = "thumbnail" src="thumbnail/1.jpg">
-        
-            <p  class="video-title">
-                Hip-Hop Remix Songs!!!!!!!!!!!!!!!!!!!!!
-            </p>
+            <div class="thumbnail-row">
+                <img class = "thumbnail" src="thumbnail/1.jpg">
+            </div>
             
-            <p class="video-author">
-                T-Seriessssss
-            </p>
-            
-            <p class="video-stats">
-                3.4M Views &#183; 6 months ago
-            </p>            
-        </div>
+            <div class="video-grid">
+                <div class="author-pic">
+                    <img class = "author-pic-css" src="author/1.JPG">
+                </div>
+                <div class="video-info">
+                    <p  class="video-title">
+                        Hip-Hop Remix Songs!!!!!!!!!!!!!!!!!!!!!
+                    </p>
+                    
+                    <p class="video-author">
+                        T-Seriessssss
+                    </p>
+                    
+                    <p class="video-stats">
+                        3.4M Views &#183; 6 months ago
+                    </p>
+                </div>
+                
+                    
+            </div>
+                    
+        </div >
 
         <div class="video-preview">
-            <img class = "thumbnail" src="thumbnail/2.jpg">
-        
-            <p  class="video-title">
-                Lofi Songs
-            </p>
+            <div class="thumbnail-row">
+                <img class = "thumbnail" src="thumbnail/2.jpg">
+            </div>
             
-            <p class="video-author">
-                T-Seriessssss!!!!!!!!!!!
-            </p>
-            
-            <p class="video-stats">
-                3.4M Views &#183; 6 months ago
-            </p>            
+            <div class="video-grid">
+                <div class="author-pic">
+                    <img class = "author-pic-css" src="author/2.png">
+                </div>
+                <div class="video-info">
+                    <p  class="video-title">
+                        Lofi Songs
+                    </p>
+                    
+                    <p class="video-author">
+                        T-Seriessssss
+                    </p>
+                    
+                    <p class="video-stats">
+                        3.4M Views &#183; 6 months ago
+                    </p>
+                </div>
+                
+                    
+            </div>            
         </div>
        </body>         
 </html>
